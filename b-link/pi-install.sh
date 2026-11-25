@@ -110,6 +110,31 @@ Categories=Utility;
 DESK
 D="$(xdg-user-dir DESKTOP 2>/dev/null || echo "$HOME/Desktop")"
 [ -d "$D" ] && { cp "$HOME/.local/share/applications/b-link.desktop" "$D/B.Link.desktop"; chmod +x "$D/B.Link.desktop"; }
+# b-link-os: make B.Link the whole machine (no desktop, no panel) or go back to the normal desktop.
+cat > "$BIN/b-link-os" <<'OSS'
+#!/bin/bash
+# b-link-os on    boot straight into B.Link, nothing else (Ctrl+Alt+F2 gives a text console)
+# b-link-os off   back to the normal Raspberry Pi desktop
+CFG="$HOME/.config/labwc"; AS="$CFG/autostart"
+case "${1:-}" in
+  on)
+    mkdir -p "$CFG"
+    [ -f "$AS" ] && [ ! -f "$AS.desktop-backup" ] && cp "$AS" "$AS.desktop-backup"
+    [ -f "$AS" ] || : > "$AS.desktop-backup.none"
+    cat > "$AS" <<'EOA'
+# B.Link OS: B.Link is the only thing that runs. Restarts itself if it ever closes.
+( while true; do "$HOME/.local/bin/b-link"; sleep 1; done ) &
+EOA
+    echo "[B.Link OS] On. Restart the Pi (sudo reboot) and it will start straight into B.Link."
+    echo "[B.Link OS] To get the desktop back: press Ctrl+Alt+F2, log in, run: b-link-os off";;
+  off)
+    if [ -f "$AS.desktop-backup" ]; then mv "$AS.desktop-backup" "$AS"; else rm -f "$AS" "$AS.desktop-backup.none"; fi
+    echo "[B.Link OS] Off. The normal desktop returns after a restart (sudo reboot).";;
+  *) echo "usage: b-link-os on|off";;
+esac
+OSS
+chmod +x "$BIN/b-link-os"
+for a in "$@"; do [ "$a" = "--os" ] && "$BIN/b-link-os" on; done
 say "Done. Open B.Link from the desktop icon, the menu (Accessories), or by typing: b-link"
-[ "${1:-}" = "--no-launch" ] || [ "${1:-}" = "--run-quiet" ] || { [ -n "${DISPLAY:-}${WAYLAND_DISPLAY:-}" ] && { say "Opening B.Link..."; nohup "$BIN/b-link" >/dev/null 2>&1 & } ; }
+case " $* " in *" --no-launch "*|*" --run-quiet "*|*" --os "*) ;; *) [ -n "${DISPLAY:-}${WAYLAND_DISPLAY:-}" ] && { say "Opening B.Link..."; nohup "$BIN/b-link" >/dev/null 2>&1 & } ;; esac
 exit 0
