@@ -1,14 +1,14 @@
 {
-  "version": "0.4.1",
-  "notes": "B.Link now tells you when an update is ready and updates with one click (UPDATE button, bottom bar).",
+  "version": "0.4.2",
+  "notes": "Model picker with prices (Admin > AI Keys > PICK MODEL). The automatic choice is now the cheapest of the newest models.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.4.1.zip",
-    "sha256": "c92d492f95122f92a8b33814bd8c2166774f6b9b1c0989acd92e45e963a72a4d",
-    "bytes": 8836136
+    "url": "B.Link-app-0.4.2.zip",
+    "sha256": "b9d0e75f7e2387b4e1784ffc1edee91be8770ba6628d07fdf841f6038e72f7fc",
+    "bytes": 8837261
   }
 }
