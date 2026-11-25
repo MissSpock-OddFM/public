@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "notes": "Miss Flower speaks and listens (hold or tap F9), full screen appliance look, cartridge keys bridge.",
+  "electron": {
+    "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
+    "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
+    "bytes": 158528093
+  },
+  "app": {
+    "url": "B.Link-app-0.2.0.zip",
+    "sha256": "04f7482a5fd7e33b52c465b35b9b0af8a620bc27dd81b3e3442b04a6cf865365",
+    "bytes": 8833388
+  }
+}
