@@ -1,0 +1,45 @@
+{
+  "version": "1",
+  "file": "B.Link-OS.img.xz",
+  "sha256": "66639eed03b5aadc9dd2b18e6338af3c69f8daf6a5edbf61703fa732e7aee8fe",
+  "bytes": 615686460,
+  "base": "https://raw.githubusercontent.com/MissSpock-OddFM/public/main/b-link-os/",
+  "parts": [
+    {
+      "name": "B.Link-OS.img.xz.part00",
+      "sha256": "2baafe7884c6fc67d6f8d636833ad6bda24743d236f4e6d73466a51e0a6e686e",
+      "bytes": 90000000
+    },
+    {
+      "name": "B.Link-OS.img.xz.part01",
+      "sha256": "beb0cbe52e0f5d01b04b61fbb539ac3cbc6f01966423bab2929534bf4a5b2242",
+      "bytes": 90000000
+    },
+    {
+      "name": "B.Link-OS.img.xz.part02",
+      "sha256": "62af8d8206f5af1b004dc76b42fab656acaf29a05896e9aeb002a1b77e7c486f",
+      "bytes": 90000000
+    },
+    {
+      "name": "B.Link-OS.img.xz.part03",
+      "sha256": "5b315d6afd625aec5fb47a966f667de69076dd7b8c33cea75fc596cc64ffd44d",
+      "bytes": 90000000
+    },
+    {
+      "name": "B.Link-OS.img.xz.part04",
+      "sha256": "2bc72fc6db5c5db5e7b0c68c216c5bb1e834ddbd30b8eabed732688482a9768b",
+      "bytes": 90000000
+    },
+    {
+      "name": "B.Link-OS.img.xz.part05",
+      "sha256": "21e66b419e5b450e604982761aa58017e797e241977c3d84aacd66f50c8e608c",
+      "bytes": 90000000
+    },
+    {
+      "name": "B.Link-OS.img.xz.part06",
+      "sha256": "dbada842acbd978f92c71e8e06c91d77073235a074cfbba8dfacf818e60fc4bd",
+      "bytes": 75686460
+    }
+  ],
+  "note": "B.Link OS: Raspberry Pi OS Lite (Trixie, arm64, 2026-10-06) plus B.Link first-boot setup."
+}
