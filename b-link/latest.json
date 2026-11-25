@@ -1,14 +1,14 @@
 {
-  "version": "0.4.4",
-  "notes": "B.Link now updates itself on open, from any shortcut.",
+  "version": "0.4.5",
+  "notes": "Safety net: Admin > ROLL BACK, and automatic rollback if a version will not start.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.4.4.zip",
-    "sha256": "0fe8dba0db613d1ed2799671cbadf8151ba682b2cc45531a30962209a379e75c",
-    "bytes": 8840259
+    "url": "B.Link-app-0.4.5.zip",
+    "sha256": "fbdf801b060d93803086fba305a98a33367417ebaaff12365ad9d846e230a4ca",
+    "bytes": 8841237
   }
 }
