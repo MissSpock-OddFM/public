@@ -1,14 +1,14 @@
 {
-  "version": "0.3.1",
-  "notes": "Betty (F3), B.Link's own assistant. B.Link now updates itself every time you open it.",
+  "version": "0.3.2",
+  "notes": "Betty's first words are no longer garbled: her voice now starts after a short quiet lead-in.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.3.1.zip",
-    "sha256": "70f78b916e298769e15ca9aa761a5f0a3e6fd792aa4d2c40c0b3464f471b7638",
-    "bytes": 8829901
+    "url": "B.Link-app-0.3.2.zip",
+    "sha256": "cf7ba1031c5b84d42397693be3aa0cb7934aae897328d306fe61d8a3987c3ae5",
+    "bytes": 8830152
   }
 }
