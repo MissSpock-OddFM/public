@@ -26,9 +26,12 @@ getf() { # url sha256 dest : download with resume, verify, reuse if already good
   [ "$(sha "$dst")" = "$want" ] || { rm -f "$dst"; say "Checksum did not match for $(basename "$dst")"; return 1; }
 }
 M="$WORK/latest.json"
-if ! curl -fsSL --max-time 15 "$BASE/latest.json?t=$(date +%s)" -o "$M.tmp"; then
+if ! curl -fsSL --connect-timeout 5 --max-time 15 "$BASE/latest.json?t=$(date +%s)" -o "$M.tmp"; then
   rm -f "$M.tmp"
-  [ -x "$DIR/electron/electron" ] && { say "Offline: opening the installed B.Link."; exec "$DIR/electron/electron" --no-sandbox "$DIR/electron/resources/app"; }
+  if [ -x "$DIR/electron/electron" ]; then
+    case " $* " in *" --run-quiet "*) exit 0;; esac
+    say "Offline: opening the installed B.Link."; exec "$DIR/electron/electron" --no-sandbox "$DIR/electron/resources/app"
+  fi
   die "Cannot reach GitHub and B.Link is not installed yet."
 fi
 mv "$M.tmp" "$M"
