@@ -1,44 +1,44 @@
 {
-  "version": "1",
+  "version": "2",
   "file": "B.Link-OS.img.xz",
-  "sha256": "66639eed03b5aadc9dd2b18e6338af3c69f8daf6a5edbf61703fa732e7aee8fe",
-  "bytes": 615686460,
+  "sha256": "a15d77a9dafc34a6f183edef025eb6cdf6b1e5621a62d9c2a108affe406886f0",
+  "bytes": 615681720,
   "base": "https://raw.githubusercontent.com/MissSpock-OddFM/public/main/b-link-os/",
   "parts": [
     {
       "name": "B.Link-OS.img.xz.part00",
-      "sha256": "2baafe7884c6fc67d6f8d636833ad6bda24743d236f4e6d73466a51e0a6e686e",
+      "sha256": "c0544c0fc18d129b7d305aca12ced6ad99b2b6ea3c540c09ed4ccf7cf6d8ef10",
       "bytes": 90000000
     },
     {
       "name": "B.Link-OS.img.xz.part01",
-      "sha256": "beb0cbe52e0f5d01b04b61fbb539ac3cbc6f01966423bab2929534bf4a5b2242",
+      "sha256": "939df3949ce226810ba2d349d140cb4173abd2ab8f9bb908aae9e84c2d35fa6b",
       "bytes": 90000000
     },
     {
       "name": "B.Link-OS.img.xz.part02",
-      "sha256": "62af8d8206f5af1b004dc76b42fab656acaf29a05896e9aeb002a1b77e7c486f",
+      "sha256": "58b9ca7319bca47d246604d06740e83f54dcf6a764c28f604ce8f669309a4884",
       "bytes": 90000000
     },
     {
       "name": "B.Link-OS.img.xz.part03",
-      "sha256": "5b315d6afd625aec5fb47a966f667de69076dd7b8c33cea75fc596cc64ffd44d",
+      "sha256": "f8f99da3cd8d0f5d15f597c572b41f5e074663475ce9d5041c6e28c7ffa180ce",
       "bytes": 90000000
     },
     {
       "name": "B.Link-OS.img.xz.part04",
-      "sha256": "2bc72fc6db5c5db5e7b0c68c216c5bb1e834ddbd30b8eabed732688482a9768b",
+      "sha256": "2ab3415259a00789f14c2d94dee546942d6f0b2bf808bf8dff95763fd8b4895d",
       "bytes": 90000000
     },
     {
       "name": "B.Link-OS.img.xz.part05",
-      "sha256": "21e66b419e5b450e604982761aa58017e797e241977c3d84aacd66f50c8e608c",
+      "sha256": "7d58e88eb976672a893cadd77f392f9da4e1b09338f85a302a1398b3be4976a7",
       "bytes": 90000000
     },
     {
       "name": "B.Link-OS.img.xz.part06",
-      "sha256": "dbada842acbd978f92c71e8e06c91d77073235a074cfbba8dfacf818e60fc4bd",
-      "bytes": 75686460
+      "sha256": "b302867aa7128a59869e1814ed119a7ac1b892e355cc3e5bda058a01af7246ef",
+      "bytes": 75681720
     }
   ],
   "note": "B.Link OS: Raspberry Pi OS Lite (Trixie, arm64, 2026-10-06) plus B.Link first-boot setup."
