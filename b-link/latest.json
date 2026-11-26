@@ -8,7 +8,7 @@
   },
   "app": {
     "url": "B.Link-app-0.5.2.zip",
-    "sha256": "9b5d3ac2399d5822bffd7f68b272ec4cb2417e5af92b87e15d498f0a86f06676",
+    "sha256": "4f95b20b6059dd248b2603c16f42c9c132a45c2a807d699c2e69263a31cea612",
     "bytes": 8851316
   },
   "electron_linux_arm64": {
