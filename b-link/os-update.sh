@@ -65,4 +65,15 @@ timedatectl set-ntp true 2>/dev/null
 systemctl restart systemd-timesyncd 2>/dev/null
 # graphics chip: B.Link now decides software vs hardware itself (and falls back safely), so the fixed --disable-gpu goes
 if grep -q -- '--disable-gpu' /etc/systemd/system/blink-kiosk.service 2>/dev/null; then sed -i 's/ --disable-gpu//' /etc/systemd/system/blink-kiosk.service; systemctl daemon-reload; fi
+# performance: keep the CPU at full speed (it normally scales down between bursts, which makes 3D stutter)
+cat > /etc/systemd/system/blink-perf.service <<'EOP'
+[Unit]
+Description=B.Link OS: CPU at full speed
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'for f in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > $f; done'
+[Install]
+WantedBy=multi-user.target
+EOP
+systemctl daemon-reload; systemctl enable --now blink-perf.service 2>/dev/null
 exit 0

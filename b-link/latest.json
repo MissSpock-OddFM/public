@@ -1,15 +1,15 @@
 {
-  "version": "0.5.11",
-  "notes": "Fix: the HOME bar was hidden in games at reduced render size. F1/F2/F3 now work even inside a game.",
+  "version": "0.5.12",
+  "notes": "Raspberry Pi: games run at full size with a clean frame (no scanline overlay); CPU kept at full speed.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.5.11.zip",
-    "sha256": "18367484102cf04ad99d9d8e4ebfc9b696bd1744c8cd2f9fc22082192f979861",
-    "bytes": 8858183
+    "url": "B.Link-app-0.5.12.zip",
+    "sha256": "ce77e289baa4224343c95a5414d897ab4c6884db0fc1909b2bbec5f8b250795a",
+    "bytes": 8858151
   },
   "electron_linux_arm64": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-linux-arm64.zip",
@@ -29,6 +29,6 @@
   },
   "os_update": {
     "url": "os-update.sh",
-    "sha256": "ce9b292d38cee4f0318c472cfd11166eecd6f053bb955d22bdadf024bfc83094"
+    "sha256": "cfc5c9ab2b0924e650a5fb975f4b544515b936d6d727a6bcda43851e21f5afdf"
   }
 }
