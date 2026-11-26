@@ -63,4 +63,6 @@ systemctl enable --now bluetooth 2>/dev/null; rfkill unblock bluetooth 2>/dev/nu
 timedatectl set-ntp true 2>/dev/null
 [ "$(timedatectl show -p Timezone --value 2>/dev/null)" = "Etc/UTC" -o "$(timedatectl show -p Timezone --value 2>/dev/null)" = "UTC" ] && timedatectl set-timezone America/New_York 2>/dev/null
 systemctl restart systemd-timesyncd 2>/dev/null
+# graphics chip: B.Link now decides software vs hardware itself (and falls back safely), so the fixed --disable-gpu goes
+if grep -q -- '--disable-gpu' /etc/systemd/system/blink-kiosk.service 2>/dev/null; then sed -i 's/ --disable-gpu//' /etc/systemd/system/blink-kiosk.service; systemctl daemon-reload; fi
 exit 0
