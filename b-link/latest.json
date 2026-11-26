@@ -1,15 +1,15 @@
 {
-  "version": "0.5.8",
-  "notes": "Logs now start with a graphics summary.",
+  "version": "0.5.9",
+  "notes": "Logs wrap fully and can be copied or saved to a file.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.5.8.zip",
-    "sha256": "b607ff107c3a6be698c94f876008c395ec03286aaeebc63b5711b9957f7dbb8b",
-    "bytes": 8857202
+    "url": "B.Link-app-0.5.9.zip",
+    "sha256": "03da261fe8cad1a8773aa498422ce63e3ef2bd0b64cabc7b19e960c2bf9ed6d0",
+    "bytes": 8857540
   },
   "electron_linux_arm64": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-linux-arm64.zip",
