@@ -1,15 +1,15 @@
 {
-  "version": "0.5.7",
-  "notes": "Raspberry Pi: uses the graphics chip for smooth 3D, with automatic fallback to software.",
+  "version": "0.5.8",
+  "notes": "Logs now start with a graphics summary.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.5.7.zip",
-    "sha256": "646956222b96e833aef0d26d4c49a1d97102583488d4ad8a28bdb7fc07c51a11",
-    "bytes": 8856882
+    "url": "B.Link-app-0.5.8.zip",
+    "sha256": "b607ff107c3a6be698c94f876008c395ec03286aaeebc63b5711b9957f7dbb8b",
+    "bytes": 8857202
   },
   "electron_linux_arm64": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-linux-arm64.zip",
@@ -29,6 +29,6 @@
   },
   "os_update": {
     "url": "os-update.sh",
-    "sha256": "ba2763ea2d83aa91c70ec9114b60f641d1f5a73bba01fe00221154d70f6cb260"
+    "sha256": "ce9b292d38cee4f0318c472cfd11166eecd6f053bb955d22bdadf024bfc83094"
   }
 }

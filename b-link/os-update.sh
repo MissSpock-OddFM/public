@@ -57,7 +57,7 @@ chmod 755 /usr/local/sbin/blink-sys
 echo 'blink ALL=(root) NOPASSWD: /usr/local/sbin/blink-sys *' > /etc/sudoers.d/blink-sys.tmp
 chmod 440 /etc/sudoers.d/blink-sys.tmp
 visudo -cf /etc/sudoers.d/blink-sys.tmp >/dev/null && mv /etc/sudoers.d/blink-sys.tmp /etc/sudoers.d/blink-sys || { rm -f /etc/sudoers.d/blink-sys.tmp; exit 1; }
-usermod -aG bluetooth blink 2>/dev/null
+usermod -aG bluetooth,systemd-journal blink 2>/dev/null
 systemctl enable --now bluetooth 2>/dev/null; rfkill unblock bluetooth 2>/dev/null
 # the clock: keep it synced, and move it off UTC to Eastern unless someone already chose another zone
 timedatectl set-ntp true 2>/dev/null
