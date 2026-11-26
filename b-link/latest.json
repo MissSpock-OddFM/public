@@ -1,15 +1,15 @@
 {
-  "version": "0.5.4",
-  "notes": "Raspberry Pi: Clock and Bluetooth settings in Admin.",
+  "version": "0.5.5",
+  "notes": "Send a cartridge (with its permissions) to a paired B.Link, such as the Raspberry Pi.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.5.4.zip",
-    "sha256": "3df4cf360c73865dc7c4b80533fb3d54d5f17aa3cf8c90bf11ae6239d96bcb66",
-    "bytes": 8854650
+    "url": "B.Link-app-0.5.5.zip",
+    "sha256": "b18d13f2b6b1998c001f3376d11e7d479e4acfdbc502d322bedbc553685a5831",
+    "bytes": 8855513
   },
   "electron_linux_arm64": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-linux-arm64.zip",
