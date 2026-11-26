@@ -43,7 +43,11 @@ SURL=$(j "d['sherpa_$ARCH'.replace('-','_')]['url']"); SSHA=$(j "d['sherpa_$ARCH
 case "$APPURL" in http*) ;; *) APPURL="$BASE/$APPURL";; esac
 REC="$DIR/install.json"
 HAVE=""; [ -f "$REC" ] && HAVE=$(python3 -c "import json;d=json.load(open('$REC'));print(d.get('app','')+'|'+d.get('electron',''))" 2>/dev/null)
-if [ "$HAVE" = "$APPSHA|$ESHA" ] && [ -x "$DIR/electron/electron" ]; then
+PUSHED=""; [ -f "$REC" ] && PUSHED=$(python3 -c "import json;print(json.load(open('$REC')).get('pushed',''))" 2>/dev/null)
+newer() { python3 -c "import sys;f=lambda v:[int(x) for x in v.split('.')];sys.exit(0 if f(sys.argv[1])>=f(sys.argv[2]) else 1)" "$1" "$2" 2>/dev/null; }
+if [ -n "$PUSHED" ] && [ -x "$DIR/electron/electron" ] && newer "$PUSHED" "$VER"; then
+  say "B.Link $PUSHED was sent from another machine and is newer than or equal to GitHub's $VER. Keeping it."
+elif [ "$HAVE" = "$APPSHA|$ESHA" ] && [ -x "$DIR/electron/electron" ]; then
   say "B.Link $VER is up to date."
 else
   say "Installing B.Link $VER..."
