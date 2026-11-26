@@ -1,15 +1,15 @@
 {
-  "version": "0.5.9",
-  "notes": "Logs wrap fully and can be copied or saved to a file.",
+  "version": "0.5.10",
+  "notes": "Raspberry Pi: RENDER SIZE setting (Admin, Q) for smoother 3D cartridges; defaults to 75%.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.5.9.zip",
-    "sha256": "03da261fe8cad1a8773aa498422ce63e3ef2bd0b64cabc7b19e960c2bf9ed6d0",
-    "bytes": 8857540
+    "url": "B.Link-app-0.5.10.zip",
+    "sha256": "f404d57d09956fe1949543d4ff55a7a6e2e6ca19b675f104d74b8961bf0a1f1a",
+    "bytes": 8858094
   },
   "electron_linux_arm64": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-linux-arm64.zip",
