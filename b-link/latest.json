@@ -1,15 +1,15 @@
 {
-  "version": "0.5.1",
-  "notes": "Send your API keys to another B.Link (Devices, SEND KEYS). Keys can be saved on the Raspberry Pi.",
+  "version": "0.5.2",
+  "notes": "Devices: pairing finds the other machine for you if the address is left empty.",
   "electron": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-win32-x64.zip",
     "sha256": "20155c8b8aa5b1f575f3757bdf21490e0bac2f19a65a26ce9ba99bcf9f2c69bd",
     "bytes": 158528093
   },
   "app": {
-    "url": "B.Link-app-0.5.1.zip",
-    "sha256": "688da32bdeba350d1af2392e4efb2ba2b39db6372b1d31d264d8b11cab166d50",
-    "bytes": 8851183
+    "url": "B.Link-app-0.5.2.zip",
+    "sha256": "9b5d3ac2399d5822bffd7f68b272ec4cb2417e5af92b87e15d498f0a86f06676",
+    "bytes": 8851316
   },
   "electron_linux_arm64": {
     "url": "https://github.com/electron/electron/releases/download/v45.5.0/electron-v45.5.0-linux-arm64.zip",
